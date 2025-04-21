@@ -2,4 +2,4 @@ from django.shortcuts import render
 from django.http import HttpResponse
 from django.shortcuts import render
 def index(request):
-    return render(request, './templates/home.html')
+    return render(request, '/home/ktimur/site/mysite/polls/templates/home.html')
