@@ -3,12 +3,57 @@
 <head>
     {% load static %}
     <title>Главная страница</title>
+     <style>
+        table {
+            width: 60%;
+            border-collapse: collapse;
+            margin: 20px 0;
+            font-size: 18px;
+            text-align: left;
+        }
+        th, td {
+            padding: 12px;
+            border: 1px solid #ddd;
+        }
+        th {
+            background-color: #f2f2f2;
+        }
+    </style>
 </head>
 <body>
     <h1>Продаю</h1>
 
-    <img src="{% static 'images/dinya.jpg' %}" alt="Мое изображение">
 
+    <img src="{% static 'images/svin.jpg' %}" alt="Мое изображение">
     <h1>+79114833457</h1>
+     <table>
+        <tr>
+            <th>Имя</th>
+            <th>Возраст</th>
+            <th>Город</th>
+            <th>Цена</th>
+        </tr>
+        <tr>
+            <td>Иван</td>
+            <td>5</td>
+            <td>Москва</td>
+            <td>Договорная</td>
+        </tr>
+        <tr>
+            <td>Мария</td>
+            <td>10</td>
+            <td>Санкт-Петербург</td>
+            <td>Договорная</td>
+        </tr>
+        <tr>
+            <td>Алексей</td>
+            <td>8</td>
+            <td>Казань</td>
+            <td>200 руб. / кг</td>
+        </tr>
+    </table>
+    <a href="{% url 'second_page' %}">
+        <button>Перейти на вторую страницу</button>
+    </a>
 </body>
 </html>
